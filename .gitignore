@@ -1,5 +1,5 @@
 dist/
 build/
 scripts/
-pmm.egg-info/
+pimm.egg-info/
 __pycache__/

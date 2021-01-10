@@ -3,7 +3,7 @@ import sys
 import os
 import ping3
 import threading
-from pmm.pmm_const import *
+from pimm.pimm_const import *
 import json
 
 
@@ -63,6 +63,14 @@ def check_config_file():
         mirrors = json.loads(f.read())
 
 
+def save_mirrors(mymirrors):
+    mirror_config_path = os.path.dirname(__file__) + '/mirrors.json'
+    if sys.platform == 'win32':
+        mirror_config_path.replace('/', '\\')
+    with open(mirror_config_path, 'w', encoding='UTF-8') as f:
+        f.write(json.dumps(mirrors))
+
+
 def init_config():
     home = os.path.expanduser('~')
     config_path = '/.pip/pip.conf'
@@ -92,7 +100,6 @@ def set_server(name):
         has_config_file = True
         with open(home + config_path, 'w', encoding='UTF-8') as f:
             f.write(lines)
-
 
 
 def show_server():

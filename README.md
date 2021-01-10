@@ -1,8 +1,8 @@
-# pmm
+# pimm
 
 ## pip mirrors manager
 
-This is a pip mirrors manager, just like nrm for npm.
+This is a pip mirrors manager, just like [nrm](https://github.com/Pana/nrm) for npm.
 
 ### support command
 

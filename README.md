@@ -10,7 +10,7 @@ This is a pip mirrors manager, just like [nrm](https://github.com/Pana/nrm) for 
 pmm ls # list all server
 pmm help # show help
 pmm test # show response time of all servers 
-pmm use <server name>
+pmm use <server_name> # use <server_name> server 
 pmm -V # show current version
 ```
 

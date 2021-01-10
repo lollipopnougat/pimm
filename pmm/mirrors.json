@@ -1,0 +1,8 @@
+{
+    "aliyun": "https://mirrors.aliyun.com/pypi/simple",
+    "thu": "https://pypi.tuna.tsinghua.edu.cn/simple",
+    "opentuna": "https://opentuna.cn/pypi/web/simple",
+    "ustc": "https://pypi.mirrors.ustc.edu.cn/simple",
+    "douban": "https://pypi.doubanio.com/simple",
+    "default": "https://pypi.org/simple"
+}
